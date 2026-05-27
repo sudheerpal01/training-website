@@ -126,7 +126,9 @@ const Home = () => {
       </div>
 
       {/*  WHY CHOOSE US */}
-      <WhyChooseUs/>
+      <div className='px-4 md:px-10 bg-white'>
+        <WhyChooseUs/>
+      </div>
 
       {/*  ABOUT SECTION  */}
       <section className="py-10 bg-white" ref={aboutRef}>

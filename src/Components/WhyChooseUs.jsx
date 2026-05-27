@@ -76,8 +76,8 @@ const WhyChooseUs = () => {
   }, []);
 
   return (
-    <section className="py-10" ref={whyRef} style={{ background: "#f9f5f0" }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-10" ref={whyRef} >
+      <div className="max-w-7xl mx-auto px-10">
 
         {/* Header */}
         <div className="text-center mb-14">

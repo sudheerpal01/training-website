@@ -9,7 +9,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { ChevronRight } from "lucide-react";
-import logo from '../../public/Images/logo1.png'
+import logo from '../../public/Images/logo.png'
 
 const trainingLinks = [
   { label: "Vocational Training",     path: "https://thedigicoders.com/vocational-training" },

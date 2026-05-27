@@ -25,10 +25,16 @@ const App = () => {
         </Routes>
         <Footer/>
         {/* Side floating buttons */}
-        <NavLink to='' className='hidden md:block fixed text-white px-2 py-1 bg-orange-600 rotate-90 left-[-57px] top-1/2 -translate-y-1/2 z-30 text-sm font-semibold'>
+        <NavLink 
+        to='https://assessment.thedigicoders.com/' 
+        target='_blank'
+        className='hidden md:block fixed text-white px-2 py-1 bg-orange-600 rotate-90 left-[-57px] top-1/2 -translate-y-1/2 z-30 text-sm font-semibold'>
           Assessment Portal
         </NavLink>
-        <NavLink to='' className='hidden md:block fixed text-white px-2 py-1 bg-green-600 rotate-90 right-[-63px] top-1/2 -translate-y-1/2 z-30 text-sm font-semibold'>
+        <NavLink 
+        to='https://thedigicoders.com/registration' 
+        target='_blank'
+        className='hidden md:block fixed text-white px-2 py-1 bg-green-600 rotate-90 right-[-63px] top-1/2 -translate-y-1/2 z-30 text-sm font-semibold'>
           Register For Training
         </NavLink>
 
