@@ -55,15 +55,33 @@ const Notice = () => {
       {/* RIGHT SECTION (Desktop Only) */}
       <div className="hidden md:flex items-center gap-4 md:ml-auto">
         {[
-          'Company Profile',
-          'Brochure',
-          'Placement Brochure',
-          'Student Login',
-        ].map((label) => (
-          <div key={label} className="flex items-center gap-1.5 cursor-pointer text-gray-400 hover:text-orange-400 transition-colors">
+          {
+            label: "Company Profile",
+            link: "/Pdf/DigiCoders_2026_Company_Profile.pdf", 
+            download: true,
+          },
+          {
+            label: "Placement Brochure",
+            link: "/Pdf/DigiCoders_2026_Training_Brochure.pdf", 
+            download: true,
+          },
+          {
+            label: "Student Login",
+            link: "https://student.thedigicoders.com/", 
+            download: false,
+          },
+        ].map((item) => (
+          <a
+            key={item.label}
+            href={item.link}
+            download={item.download}
+            target={!item.download ? "_blank" : "_self"}
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 cursor-pointer text-gray-400 hover:text-orange-400 transition-colors"
+          >
             <FaDownload size={12} />
-            <span className="text-xs font-semibold">{label}</span>
-          </div>
+            <span className="text-xs font-semibold">{item.label}</span>
+          </a>
         ))}
       </div>
 

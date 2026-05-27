@@ -403,8 +403,9 @@ export default function HeroSlider() {
                 onMouseLeave={(e) => {
                   e.currentTarget.style.boxShadow = `0 4px 20px rgba(${s.glowRgb},0.38)`;
                 }}
+                onClick={() => window.open("https://thedigicoders.com/placement", "_blank")}
               >
-                Explore Courses
+                Our Placements
               </button>
 
               <button
@@ -417,6 +418,8 @@ export default function HeroSlider() {
                 }}
                 onMouseEnter={() => setOutlineHover(true)}
                 onMouseLeave={() => setOutlineHover(false)}
+                onClick={() => window.open("https://thedigicoders.com/summer-training", "_blank")}
+
               >
                 Join Training
               </button>

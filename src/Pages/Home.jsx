@@ -200,16 +200,18 @@ const Home = () => {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <a href="/services"
+              <a href="https://digicoders.in/Home/ITServices"
+                target='_blank'
                 className="group flex items-center gap-2 px-6 py-3 font-bold rounded-xl text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: '#ff8c00' }}
                 onMouseEnter={e => e.currentTarget.style.background = '#e65100'}
-                onMouseLeave={e => e.currentTarget.style.background = '#ff8c00'}
+                onMouseLeave={e => e.currentTarget.style.background = '#ff8c00'}                                               
               >
                 Our Services
                 <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="/about"
+              <a href="https://thedigicoders.com/about"
+                target='_blank'
                 className="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5">
                 Know More
               </a>
@@ -227,12 +229,8 @@ const Home = () => {
       {/* FINAL CTA SECTION */}
       <section className="relative overflow-hidden py-14 px-6"
         style={{ background: 'linear-gradient(135deg, #0d1b2a 0%, #1a2f1a 50%, #0d1b2a 100%)' }}>
-
-        {/* Subtle dot grid */}
         <div className="absolute inset-0 opacity-[0.04]"
           style={{ backgroundImage: 'radial-gradient(circle, #ff8c00 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
-
-        {/* Glow orbs using brand colors */}
         <div className="absolute top-0 left-1/4 w-64 h-64 rounded-full opacity-15 pointer-events-none"
           style={{ background: 'radial-gradient(circle, #ff8c00, transparent)', filter: 'blur(60px)' }} />
         <div className="absolute bottom-0 right-1/4 w-64 h-64 rounded-full opacity-15 pointer-events-none"
@@ -256,7 +254,8 @@ const Home = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-8">
-            <a href="/contact#registration"
+            <a href="https://thedigicoders.com/registration"
+              target='_blank'
               className="group relative px-8 py-4 font-bold rounded-xl text-white transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2"
               style={{ background: '#ff8c00' }}
               onMouseEnter={e => e.currentTarget.style.background = '#e65100'}
@@ -265,7 +264,8 @@ const Home = () => {
               Register Now
               <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="/contact"
+            <a href="https://thedigicoders.com/contact"
+              target='_blank'
               className="px-8 py-4 font-bold rounded-xl border text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'rgba(76,175,80,0.12)', borderColor: 'rgba(76,175,80,0.35)', color: '#81c784' }}
               onMouseEnter={e => { e.currentTarget.style.background = '#4caf50'; e.currentTarget.style.color = 'white'; }}
