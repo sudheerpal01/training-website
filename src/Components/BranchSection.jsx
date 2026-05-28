@@ -19,7 +19,7 @@ const branches = [
     city: "Kanpur",
     image: kanpur,
     location:
-      "128/3/98, Yashoda Nagar, Kanpur UP 208011, Opp. Shivaji Park",
+      "340, S-Block, near Annapoorna Hospital, Shehnai Chauraha, Yasodha Nagar, Kanpur, 208011",
     contact: "+91 6394 296 293",
     email: "info@thedigicoders.com",
     hours: "Mon-Sat: 10:00 AM - 7:00 PM",
@@ -28,7 +28,7 @@ const branches = [
     city: "Gorakhpur",
     image: kanpur,
     location:
-      "128/3/98, Yashoda Nagar, Kanpur UP 208011, Opp. Shivaji Park",
+      "Inside main Building, Buddha Institute of Technology, CL-1, Sector-7, Gida, Gorakhpur, UP, 273209",
     contact: "+91 6394 296 293",
     email: "info@thedigicoders.com",
     hours: "Mon-Sat: 10:00 AM - 7:00 PM",

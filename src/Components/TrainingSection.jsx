@@ -12,7 +12,6 @@ const trainingData = [
     description: "Practical skill development aligned with diploma curriculum.",
     featured: false,
     btnVariant: "blue",
-    registerLink: "https://thedigicoders.com/vocational-training",
   },
   {
     id: 2,
@@ -26,7 +25,6 @@ const trainingData = [
     description: "Intensive 4-6 weeks summer program on latest technologies.",
     featured: false,
     btnVariant: "blue",
-    registerLink: "https://thedigicoders.com/summer-training",
   },
   {
     id: 3,
@@ -40,7 +38,6 @@ const trainingData = [
     description: "Quick skill enhancement during winter break.",
     featured: false,
     btnVariant: "blue",
-    registerLink: "https://thedigicoders.com/winter-training",
   },
   {
     id: 4,
@@ -54,7 +51,6 @@ const trainingData = [
     description: "Comprehensive 6-month industry exposure program.",
     featured: true,
     btnVariant: "orange",
-    registerLink: "https://thedigicoders.com/industrial-training",
   },
   {
     id: 5,
@@ -68,7 +64,6 @@ const trainingData = [
     description: "Official apprenticeship programs with stipends.",
     featured: false,
     btnVariant: "blue",
-    registerLink: "https://thedigicoders.com/apprenticeship-training",
   },
   {
     id: 6,
@@ -82,7 +77,6 @@ const trainingData = [
     description: "Work on real client projects under senior developers.",
     featured: true,
     btnVariant: "orange",
-    registerLink: "https://thedigicoders.com/internship-training",
   },
   {
     id: 7,
@@ -96,7 +90,6 @@ const trainingData = [
     description: "End-to-end guidance for major academic projects.",
     featured: false,
     btnVariant: "blue",
-    registerLink: "https://thedigicoders.com/project-training",
   },
   {
     id: 8,
@@ -110,7 +103,6 @@ const trainingData = [
     description: "Academic syllabus coverage with practical approach.",
     featured: false,
     btnVariant: "blue",
-    registerLink: "https://thedigicoders.com/syllabus-training",
   },
   {
     id: 9,
@@ -124,7 +116,6 @@ const trainingData = [
     description: "FDPs on advanced tech stacks and industry trends.",
     featured: false,
     btnVariant: "blue",
-    registerLink: "https://thedigicoders.com/faculty-training",
   },
 ];
 
@@ -151,14 +142,14 @@ const IconBox = ({ children }) => (
 );
 
 // Register button — ab link bhi accept karta hai
-const RegisterBtn = ({ variant, link }) => {
+const RegisterBtn = ({ variant}) => {
   const base =
     "mt-5 w-full py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-200 focus:outline-none block text-center";
 
   if (variant === "orange") {
     return (
       <a
-        href={link}
+        href="https://thedigicoders.com/registration"
         target="_blank"
         rel="noopener noreferrer"
         className={base}
@@ -180,7 +171,7 @@ const RegisterBtn = ({ variant, link }) => {
 
   return (
     <a
-      href={link}
+      href="https://thedigicoders.com/registration"
       target="_blank"
       rel="noopener noreferrer"
       className={`${base} group-hover:bg-white`}
@@ -208,7 +199,6 @@ const TrainingCard = ({
   description,
   featured,
   btnVariant,
-  registerLink,
 }) => (
   <div
     className="
@@ -216,12 +206,14 @@ const TrainingCard = ({
       bg-white
       text-black
       p-7 flex flex-col
-      border border-gray-100
+      border border-gray-200
       shadow-2xl
       cursor-pointer
       transition-all duration-300
       hover:-translate-y-2.5
-      rounded-[24px_4px_24px_4px]
+      rounded-[24px_2px_24px_2px]
+      hover:rounded-[2px_24px_2px_24px]
+      hover:border-orange-500
     "
     // onMouseEnter={(e) => {
     //   e.currentTarget.classList.remove(
@@ -274,7 +266,7 @@ const TrainingCard = ({
     </p>
 
     {/* Har card ko uski apni link milti hai */}
-    <RegisterBtn variant={btnVariant} link={registerLink} />
+    <RegisterBtn variant={btnVariant} />
   </div>
 );
 

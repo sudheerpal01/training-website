@@ -108,7 +108,7 @@ const MarqueeRow = ({ items, direction = "left", speed = 30 }) => {
 // ─── Main Section ──────────────────────────────────────────────────────────────
 const PlacementSection = () => {
   return (
-    <section className="py-12 overflow-hidden px-10" style={{ background: "#f9f5f0" }}>
+    <section className="py-12 overflow-hidden md:px-10" style={{ background: "#f9f5f0" }}>
 
       {/* ── Keyframes ── */}
       <style>{`
