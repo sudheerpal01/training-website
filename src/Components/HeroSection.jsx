@@ -141,15 +141,14 @@ export default function HeroSection() {
           >
             Turn Ideas Into<br />
             <span className="text-[#1a7a3e]">Real-World</span><br />
-            <span className="text-[#e85d20] font-mono">{"{"}</span>
+            <span className="text-[#e85d20] ">{"{"}</span>
             {" Tech Skills "}
-            <span className="text-[#e85d20] font-mono">{"}"}</span>
+            <span className="text-[#e85d20] ">{"}"}</span>
           </h1>
 
           {/* Tagline */}
-          <p className="anim-2 text-[13.5px] md:text-sm text-[#4a5870] leading-[1.78] mb-6 mx-auto md:mx-0 max-w-[360px] md:max-w-[400px]">
-            DigiCoders Technologies — hands-on training in Web Development, Data Science,
-            Cloud &amp; more. Learn from industry experts. Get placed.
+          <p className="anim-2 text-[13.5px] md:text-sm text-gray-600 leading-[1.78] mb-6 mx-auto md:mx-0 max-w-[360px] md:max-w-[400px]">
+            Master in-demand technologies with live projects, expert mentorship, and industry-focused training designed for real careers.
           </p>
 
           {/* CTA Buttons */}
@@ -157,15 +156,13 @@ export default function HeroSection() {
             <button
               onClick={() => window.open("https://thedigicoders.com/placement", "_blank")}
               className="dc-btn-p bg-[#1a7a3e] text-white border-none rounded-[9px] px-5 py-2.5 sm:px-6 sm:py-3 text-[13px] sm:text-[13.5px] font-bold cursor-pointer transition-all duration-150"
-              style={{ fontFamily: "'Plus Jakarta Sans',sans-serif" }}
             >
-              Our Placement →
+              View Placements →
             </button>
 
             <button
               onClick={() => window.open("https://thedigicoders.com/summer-training", "_blank")}
               className="dc-btn-s bg-white text-green-700 border-[1.5px] border-[#d0d8e8] rounded-[9px] px-4 py-[10px] sm:px-5 text-[13px] sm:text-[13.5px] font-semibold cursor-pointer flex items-center justify-center gap-1.5 transition-all duration-150"
-              style={{ fontFamily: "'Plus Jakarta Sans',sans-serif" }}
             >
               Join Training →
             </button>
@@ -224,7 +221,7 @@ export default function HeroSection() {
 
       {/* ── Course Ticker Strip ── */}
       <div className="relative z-10 border-t border-[rgba(13,26,46,0.08)] bg-[#e4e9f2] px-4 sm:px-8 md:px-10 py-3 flex items-center gap-4 sm:gap-5 overflow-hidden -mt-4 md:-mt-32">
-        <span className="font-mono text-[9px] sm:text-[10px] text-[#7a8fa8] tracking-[.09em] uppercase whitespace-nowrap shrink-0">
+        <span className=" text-[9px] sm:text-[10px] text-[#7a8fa8] tracking-[.09em] uppercase whitespace-nowrap shrink-0">
           Courses →
         </span>
         <div

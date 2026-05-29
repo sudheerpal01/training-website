@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { IoCall } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import { ChevronRight, Star, Users, Clock, TrendingUp, Globe, GraduationCap, Building2, Award, BookOpen, Zap } from 'lucide-react';
+import { ChevronRight, Users, Clock, TrendingUp, GraduationCap, Building2, Award, BookOpen, Zap } from 'lucide-react';
 
 import about from '../../public/Images/hero1.jpg'
 import hero2 from '../../public/Images/hero2.jpg'
@@ -38,7 +38,7 @@ function StatCard({ stat, index, inView }) {
   const Icon = stat.icon
   return (
     <div
-      className="relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 overflow-hidden group"
+      className=" relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 overflow-hidden group"
       style={{ animation: inView ? `fadeUp 0.5s ease forwards ${index * 0.1}s` : 'none', opacity: 0 }}
     >
       <div className="absolute -right-4 -bottom-4 w-24 h-24 rounded-full opacity-10 transition-all duration-500 group-hover:opacity-20 group-hover:scale-110"
@@ -66,7 +66,6 @@ const statsData = [
 ]
 
 const Home = () => {
-  const [current, setCurrent] = useState(0);
   const statsRef    = useRef(null)
   const whyRef      = useRef(null)
   const aboutRef    = useRef(null)

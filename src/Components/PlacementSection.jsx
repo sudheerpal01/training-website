@@ -9,15 +9,15 @@ const placements1 = [
   { name: "Priya Singh",  role: "Cloud Engineer",     company: "TCS",           salary: "9.2 LPA", tag: "Cloud",           bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero2 },
   { name: "Amit Verma",   role: "ML Engineer",        company: "Wipro",         salary: "11 LPA",  tag: "AI / ML",        bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
   { name: "Sneha Patel",  role: "DevOps Engineer",    company: "HCL",           salary: "10 LPA",  tag: "DevOps",          bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: about },
-  { name: "Karan Mehta",  role: "Penetration Tester", company: "Tech Mahindra", salary: "7.8 LPA", tag: "VAPT",            bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
+  { name: "Karan Mehta",  role: "PHP & Laravel", company: "Tech Mahindra", salary: "7.8 LPA", tag: "VAPT",            bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
   { name: "Riya Joshi",   role: "Data Scientist",     company: "Accenture",     salary: "12 LPA",  tag: "Data Science",    bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero2 },
 ];
 
 const placements2 = [
-  { name: "Vikas Nair",   role: "SOC Analyst",      company: "Capgemini",  salary: "8 LPA",  tag: "Security",    bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: about },
+  { name: "Vikas Nair",   role: "Data Analyst",      company: "Capgemini",  salary: "8 LPA",  tag: "Security",    bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: about },
   { name: "Anjali Dubey", role: "AWS Architect",    company: "IBM",        salary: "14 LPA", tag: "Cloud",       bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero2 },
   { name: "Dev Chauhan",  role: "Python Developer", company: "Mindtree",   salary: "7 LPA",  tag: "Python",      bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: about },
-  { name: "Pooja Rawat",  role: "NLP Engineer",     company: "Persistent", salary: "13 LPA", tag: "NLP",         bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
+  { name: "Pooja Rawat",  role: "Full Stack developer",     company: "Persistent", salary: "13 LPA", tag: "NLP",         bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
   { name: "Harsh Pandey", role: "Network Engineer", company: "Cognizant",  salary: "9 LPA",  tag: "Networking",  bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero2 },
   { name: "Neha Gupta",   role: "Power BI Analyst", company: "Hexaware",   salary: "10 LPA", tag: "BI",          bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
 ];
@@ -27,13 +27,13 @@ const companies = [
   { name: "Infosys",       color: "#e25400" },
   { name: "TCS",           color: "#007a3b" },
   { name: "Wipro",         color: "#e25400" },
-  { name: "HCL Tech",      color: "#e25400" },
+  { name: "HCL Tech",      color: "#007a3b" },
   { name: "Accenture",     color: "#e25400" },
   { name: "Capgemini",     color: "#007a3b" },
   { name: "Tech Mahindra", color: "#e25400" },
   { name: "IBM",           color: "#007a3b" },
   { name: "Cognizant",     color: "#e25400" },
-  { name: "Mindtree",      color: "#e25400" },
+  { name: "Mindtree",      color: "#007a3b" },
   { name: "Persistent",    color: "#e25400" },
   { name: "Hexaware",      color: "#007a3b" },
 ];
@@ -63,15 +63,18 @@ const PlacementCard = ({ p, index }) => (
     {/* Info */}
     <div className="px-3 pt-2.5 pb-3 bg-white">
       <p className="text-[13px] font-semibold text-gray-900 m-0 leading-tight">{p.name}</p>
-      <p className="text-[11px] text-gray-500 m-0 mt-0.5">
-        {p.role} · {p.company}
+      <p className="text-md text-gray-500 m-0 my-1">
+        {p.role} 
       </p>
-      <span
-        className="inline-block mt-1.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
-        style={{ background: p.salBg, color: p.salCol }}
-      >
-        {p.salary}
-      </span>
+      <div className="flex items-center justify-between">
+        <span className="text"> {p.company} </span>
+        <span
+          className="inline-block mt-1.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
+          style={{ background: p.salBg, color: p.salCol }}
+        >
+          {p.salary}
+        </span>
+      </div>
     </div>
   </div>
 );
@@ -170,7 +173,7 @@ const PlacementSection = () => {
       {/* ── Hiring Partners ── */}
       <div>
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 my-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-8">
             Hiring &nbsp;Partners
           </h2>
           <div className="mx-auto mt-3 h-[2px] w-42 rounded-full bg-gradient-to-r from-orange-500 to-transparent mb-5" />

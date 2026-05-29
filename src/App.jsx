@@ -15,13 +15,6 @@ const App = () => {
         <Header/>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='https://thedigicoders.com/about' />
-          <Route path='https://digicoders.in/Home/SoftwareDevelopment' />
-          <Route path='https://thedigicoders.com/registration' />
-          <Route path='https://thedigicoders.com/placement' />
-          <Route path='https://thedigicoders.com/summer-training' />
-          <Route path='https://thedigicoders.com/gallery' />
-          <Route path='https://thedigicoders.com/contact' />
         </Routes>
         <Footer/>
         {/* Side floating buttons */}
