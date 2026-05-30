@@ -5,6 +5,7 @@ import {
   FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt, FaGlobe,
   FaTrophy,
   FaPhone,
+  FaYoutubeSquare,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -41,11 +42,11 @@ const services = [
 ];
 
 const socialLinks = [
-  { icon: FaFacebook,  title: "Facebook",  href: "#",                          hoverBg: "#1877f2" },
-  { icon: FaInstagram, title: "Instagram", href: "#",                          hoverBg: "#e1306c" },
-  { icon: FaLinkedin,  title: "LinkedIn",  href: "#",                          hoverBg: "#0077b5" },
-  { icon: FaXTwitter,  title: "Twitter",   href: "#",                          hoverBg: "#000000" },
-  { icon: FaWhatsapp,  title: "WhatsApp",  href: "https://wa.me/919198483820", hoverBg: "#25d366" },
+  { icon: FaFacebook,  title: "Facebook",  href: "https://www.facebook.com/DigiCodersTech/",                          hoverBg: "#1877f2" },
+  { icon: FaInstagram, title: "Instagram", href: "https://www.instagram.com/digicoderstech",                          hoverBg: "#e1306c" },
+  { icon: FaLinkedin,  title: "LinkedIn",  href: "https://www.linkedin.com/company/digicoders/",                 hoverBg: "#0077b5" },
+  { icon: FaYoutube,  title: "YouTube",   href: "https://www.youtube.com/@digicoders",                          hoverBg: "#000000" },
+  { icon: FaWhatsapp,  title: "WhatsApp",  href: "https://wa.me/919198483820",                                   hoverBg: "#25d366" },
 ];
 
 const columns = [

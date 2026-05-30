@@ -1,59 +1,67 @@
 import { useRef, useState } from "react";
 
+import vedprakash from '/Images/ved-prakash-team-lead-web-development.png'
+import adityakashyap from '/Images/aditya-kashyap-business-development-manager.png'
+import sumeshgupta from '/Images/sumesh-gupta-team-lead-graphics.png'
+import abhisheksingh from '/Images/abhishek-singh-sr.-data-analyst-expert.png'
+import masoomabbas from '/Images/masoom-abbas-business-development-analyst.png'
+import pushkalsingh from '/Images/pushkal-singh-coorporate-relation-manager.jpeg'
+
+
 // ───────── DATA ────────────
 const expertsData = [
   {
     id: 1,
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    name: "Rajesh Kumar",
-    role: "Full Stack Developer",
-    experience: "8+ Years in Web Development",
+    image: vedprakash,
+    name: "Ved Prakash",
+    role: "Team Lead (Web Developer)",
+    experience: "2+ Years in Web Development",
     expertise: ["React", "Node.js", "MongoDB"],
     linkedin: "#",
   },
   {
     id: 2,
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Priya Sharma",
-    role: "Data Science Expert",
-    experience: "6+ Years in ML & AI",
-    expertise: ["Python", "TensorFlow", "NLP"],
+    image: sumeshgupta,
+    name: "Sumesh Gupta",
+    role: "Team Lead (Graphics)",
+    experience: "3+ Years in Graphic Designing",
+    expertise: ["Photoshop", "Illustrator", "CorelDRAW"],
     linkedin: "#",
   },
   {
     id: 3,
-    image: "https://randomuser.me/api/portraits/men/56.jpg",
-    name: "Amit Verma",
-    role: "DevOps Engineer",
-    experience: "7+ Years in Cloud & CI/CD",
-    expertise: ["AWS", "Docker", "Kubernetes"],
+    image: abhisheksingh,
+    name: "Abhishek Singh",
+    role: "Sr. Data Analyst Expert",
+    experience: "4+ Years in Data Analytics",
+    expertise: ["Power BI", "Excel", "SQL"],
     linkedin: "#",
   },
   {
     id: 4,
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
-    name: "Sneha Gupta",
-    role: "UI/UX Designer",
-    experience: "5+ Years in Product Design",
-    expertise: ["Figma", "React", "Tailwind"],
+    image: adityakashyap,
+    name: "Aditya Kashyap",
+    role: "Business Development Executive",
+    experience: "5+ Years in Business Development",
+    expertise: ["Client Handling", "Communication", "Sales Strategy"],
     linkedin: "#",
   },
   {
     id: 5,
-    image: "https://randomuser.me/api/portraits/men/77.jpg",
-    name: "Vikram Singh",
-    role: "Cybersecurity Analyst",
-    experience: "9+ Years in Network Security",
-    expertise: ["Ethical Hacking", "VAPT", "Linux"],
+    image: masoomabbas,
+    name: "Masoom Abbas",
+    role: "Business Development Executive",
+    experience: "9+ Years in Business Growth",
+    expertise: ["Lead Generation", "Marketing", "Client Relations"],
     linkedin: "#",
   },
   {
     id: 6,
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
-    name: "Anjali Mishra",
-    role: "Android Developer",
-    experience: "5+ Years in Mobile Apps",
-    expertise: ["Kotlin", "Java", "Firebase"],
+    image: pushkalsingh,
+    name: "Pushkal Singh",
+    role: "Corporate Relation Manager",
+    experience: "5+ Years in Corporate Relations",
+    expertise: ["Partnership Management", "Networking", "Communication"],
     linkedin: "#",
   },
 ];

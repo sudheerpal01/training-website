@@ -7,6 +7,7 @@ import { ChevronRight, Users, Clock, TrendingUp, GraduationCap, Building2, Award
 import about from '../../public/Images/hero1.jpg'
 import hero2 from '../../public/Images/hero2.jpg'
 import hero3 from '../../public/Images/hero3.jpg'
+import aboutImage from '../../public/Images/about.jpg'
 import ExpertSection from '../Components/ExpertSection';
 import ServicesSection from '../Components/ServicesSection';
 // import HeroSlider from '../Components/HeroSlider';
@@ -150,7 +151,7 @@ const Home = () => {
             style={aboutInView ? { animation: 'slideRight 0.7s ease forwards', opacity: 0 } : { opacity: 0 }}
           >
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={about} alt="About DigiCoders" className="w-full h-auto md:h-[420px] object-cover" />
+              <img src={aboutImage} alt="About DigiCoders" className="w-full h-auto md:h-[420px] object-cover" />
               {/* Floating badge — navy bg with orange accent */}
               <div className="absolute bottom-5 left-5 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center"

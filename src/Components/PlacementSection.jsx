@@ -1,25 +1,155 @@
+import React from 'react'
 
-const about = "/Images/about.jpg";
-const hero2  = "/Images/hero2.jpg";
-const hero3  = "/Images/hero3.jpg";
+import placement417 from '/Images/placement-417.jpeg'
+import placement418 from '/Images/placement-418.jpeg'
+import placement420 from '/Images/placement-420.jpeg'
+import placement413 from '/Images/placement-413.jpeg'
+import placement410 from '/Images/placement-410.jpeg'
+import placement409 from '/Images/placement-409.jpeg'
+import placement403 from '/Images/placement-403.jpeg'
+import placement401 from '/Images/placement-401.jpeg'
+import placement397 from '/Images/placement-397.jpeg'
+import placement385 from '/Images/placement-385.jpeg'
+import placement388 from '/Images/placement-388.jpeg'
+import placement391 from '/Images/placement-391.jpeg'
 
 // ─── Placement Data ────────────────────────────────────────────────────────────
 const placements1 = [
-  { name: "Rahul Sharma", role: "Security Analyst",   company: "Infosys",       salary: "8.5 LPA", tag: "Cyber Security",  bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: about },
-  { name: "Priya Singh",  role: "Cloud Engineer",     company: "TCS",           salary: "9.2 LPA", tag: "Cloud",           bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero2 },
-  { name: "Amit Verma",   role: "ML Engineer",        company: "Wipro",         salary: "11 LPA",  tag: "AI / ML",        bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
-  { name: "Sneha Patel",  role: "DevOps Engineer",    company: "HCL",           salary: "10 LPA",  tag: "DevOps",          bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: about },
-  { name: "Karan Mehta",  role: "PHP & Laravel", company: "Tech Mahindra", salary: "7.8 LPA", tag: "VAPT",            bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
-  { name: "Riya Joshi",   role: "Data Scientist",     company: "Accenture",     salary: "12 LPA",  tag: "Data Science",    bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero2 },
+  {
+    name: "Isha Devi",
+    role: "Adroid Developer",
+    company: "Achyuta Software",
+    salary: "5 LPA",
+    tag: "Android",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement397,
+  },
+  {
+    name: "Km. Nikita",
+    role: "ASP.Net Core",
+    company: "Fact Find Tech",
+    salary: "9.2 LPA",
+    tag: "Full Stack",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement401,
+  },
+  {
+    name: "Preeti Yadav",
+    role: "Business Dev. Executive",
+    company: "Founder COde",
+    salary: "3.2 LPA",
+    tag: "BDE",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement403,
+  },
+  {
+    name: "Ravi Gupta",
+    role: "Associate Executive",
+    company: "Namisite Tech.",
+    salary: "3.2 LPA",
+    tag: "DevOps",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement409,
+  },
+  {
+    name: "Riddhi Shukla",
+    role: "MERN Stack Dev.",
+    company: "UP24NEWS",
+    salary: "7.8 LPA",
+    tag: "VAPT",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement410,
+  },
+  {
+    name: "Samreen Fatima",
+    role: "Executive Operations",
+    company: "Stacker",
+    salary: "2.8 LPA",
+    tag: "Executive Operations",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement413,
+  },
 ];
 
 const placements2 = [
-  { name: "Vikas Nair",   role: "Data Analyst",      company: "Capgemini",  salary: "8 LPA",  tag: "Security",    bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: about },
-  { name: "Anjali Dubey", role: "AWS Architect",    company: "IBM",        salary: "14 LPA", tag: "Cloud",       bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero2 },
-  { name: "Dev Chauhan",  role: "Python Developer", company: "Mindtree",   salary: "7 LPA",  tag: "Python",      bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: about },
-  { name: "Pooja Rawat",  role: "Full Stack developer",     company: "Persistent", salary: "13 LPA", tag: "NLP",         bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
-  { name: "Harsh Pandey", role: "Network Engineer", company: "Cognizant",  salary: "9 LPA",  tag: "Networking",  bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero2 },
-  { name: "Neha Gupta",   role: "Power BI Analyst", company: "Hexaware",   salary: "10 LPA", tag: "BI",          bg: "#fff3e0", salBg: "#ffe0b2", salCol: "#e65100", image: hero3 },
+  {
+    name: "Shrashti Singh",
+    role: "Digital Marketer",
+    company: "Code Crafter",
+    salary: "8 LPA",
+    tag: "Security",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement417,
+  },
+  {
+    name: "Sudhanshu Ojha",
+    role: "PHP & Laravel Developer",
+    company: "Askpolicy",
+    salary: "14 LPA",
+    tag: "Cloud",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement420,
+  },
+  {
+    name: "Vivek Chaurasiya",
+    role: "MERN Stack Developer",
+    company: "Digicoders",
+    salary: "2.8 LPA",
+    tag: "MERN",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement418,
+  },
+  {
+    name: "Akhlesh Verma",
+    role: "Full Stack developer",
+    company: "Ecomsyncify",
+    salary: "3.5 LPA",
+    tag: "Full Stack",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement385,
+  },
+  {
+    name: "Chandrama Prashad",
+    role: "Java Developer",
+    company: "Digicoders",
+    salary: "3.4 LPA",
+    tag: "JAVA",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement388,
+  },
+  {
+    name: "Neha Gupta",
+    role: "Power BI Analyst",
+    company: "Hexaware",
+    salary: "10 LPA",
+    tag: "BI",
+    bg: "#fff3e0",
+    salBg: "#ffe0b2",
+    salCol: "#e65100",
+    image: placement391,
+  },
 ];
 
 // ─── Companies Data ────────────────────────────────────────────────────────────
@@ -42,12 +172,12 @@ const companies = [
 const PlacementCard = ({ p, index }) => (
   <div
     key={index}
-    className="flex-shrink-0 w-[220px] mx-2 rounded-2xl overflow-hidden border bg-white transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl"
+    className="flex-shrink-0 w-[240px] mx-2 rounded-2xl overflow-hidden border bg-white transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl"
     style={{ borderColor: "rgba(255,140,0,0.15)", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}
   >
     {/* Image */}
-    <div className="relative w-full h-[180px] overflow-hidden" style={{ background: p.bg }}>
-      <img src={p.image} alt={p.name} className="w-full h-full object-cover object-top" />
+    <div className="relative w-full h-[200px] overflow-hidden" style={{ background: p.bg }}>
+      <img src={p.image} alt={p.name} className="w-full h-full object-fit object-top" />
       <div
         className="absolute inset-0"
         style={{ background: "linear-gradient(to top,rgba(0,0,0,0.18) 0%,transparent 55%)" }}
@@ -62,12 +192,12 @@ const PlacementCard = ({ p, index }) => (
 
     {/* Info */}
     <div className="px-3 pt-2.5 pb-3 bg-white">
-      <p className="text-[13px] font-semibold text-gray-900 m-0 leading-tight">{p.name}</p>
-      <p className="text-md text-gray-500 m-0 my-1">
+      <p className="text-md font-semibold text-gray-900 m-0 leading-tight">{p.name}</p>
+      <p className="text-sm text-gray-500 m-0 my-1">
         {p.role} 
       </p>
       <div className="flex items-center justify-between">
-        <span className="text"> {p.company} </span>
+        <span className="text-sm"> {p.company} </span>
         <span
           className="inline-block mt-1.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
           style={{ background: p.salBg, color: p.salCol }}

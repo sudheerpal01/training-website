@@ -1,14 +1,17 @@
+import React from "react";
 import { IoCall } from "react-icons/io5";
 import { MdLocationOn, MdEmail, MdAccessTime } from "react-icons/md";
 import { useEffect, useRef, useState } from "react";
 
-const lucknow = "/Images/hero1.jpg";
-const kanpur  = "/Images/hero2.jpg";
+import lucknowBranch from '/Images/lucknow-head-office-digicoders.jpg'
+import kanpurBranch from '/Images/kanpur-branch-digicoders.jpg'
+import GorakhpurBranch from '/Images/digicoders-gorakhpur-branch.jpg'
+
 
 const branches = [
   {
     city: "Lucknow",
-    image: lucknow,
+    image: lucknowBranch,
     location:
       "2nd Floor, B-36, Sector O, Near Ram Ram Bank Chauraha, Aliganj, Lucknow UP 226021",
     contact: "+91 9198483820",
@@ -17,7 +20,7 @@ const branches = [
   },
   {
     city: "Kanpur",
-    image: kanpur,
+    image: kanpurBranch,
     location:
       "340, S-Block, near Annapoorna Hospital, Shehnai Chauraha, Yasodha Nagar, Kanpur, 208011",
     contact: "+91 6394 296 293",
@@ -26,7 +29,7 @@ const branches = [
   },
   {
     city: "Gorakhpur",
-    image: kanpur,
+    image: GorakhpurBranch,
     location:
       "Inside main Building, Buddha Institute of Technology, CL-1, Sector-7, Gida, Gorakhpur, UP, 273209",
     contact: "+91 6394 296 293",
@@ -80,7 +83,7 @@ const BranchCard = ({ image, city, location, contact, email, hours, index }) => 
       className="bg-white rounded-2xl shadow-md overflow-hidden border border-orange-100"
     >
       {/* Image */}
-      <div className="relative overflow-hidden" style={{ height: "176px" }}>
+      <div className="relative overflow-hidden h-56">
         <img
           src={image}
           alt={city}
@@ -170,7 +173,7 @@ const BranchesSection = () => {
   const [headingRef, headingInView] = useInView(0.2);
 
   return (
-    <section className="py-14" style={{ background: "#f9f5f0" }}>
+    <section className="py-10" style={{ background: "#f9f5f0" }}>
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
