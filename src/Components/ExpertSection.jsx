@@ -10,6 +10,14 @@ import divyapal from '/Images/divya-pal-hr-executive.png'
 import gayatri from '/Images/gayatri-vishwakarma-hr-executive.png'
 import roshni from '/Images/roshani-yadav-social-media-manager.jpeg'
 import yogeshpal from '/Images/yogesh-pal-full-stack-developer.png'
+import mayank from '/Images/mayank-pandey-full-stack-developer.jpeg'
+import saurabh from '/Images/saurabh-kumar-full-stack-developer.png'
+import chandrama from '/Images/chandrama-prasad-yadav-cyber-security-engineer.jpg'
+import deepa from '/Images/deepa-singh-business-analyst.png'
+import kriti from '/Images/kriti-malviya-business-analyst.png'
+import gaurav from '/Images/gaurav-gupta-team-lead-full-stack.png'
+import rajkumar from '/Images/rajkumar-android-developer.jpeg'
+import muskan from '/Images/muskan-kumari-hr-executive.jpg'
 
 
 // ───────── DATA ────────────
@@ -73,6 +81,54 @@ const expertsData = [
   image: yogeshpal,
   name: "Yogesh Pal",
   role: ".NET Developer",
+},
+{
+  id: 11,
+  image: mayank,
+  name: "Mayank",
+  role: "Full Stack Developer",
+},
+{
+  id: 12,
+  image: saurabh,
+  name: "Saurabh Kumar",
+  role: "Full Stack Developer",
+},
+{
+  id: 13,
+  image: chandrama,
+  name: "Chandrama Yadav",
+  role: "Cyber Security Engineer",
+},
+{
+  id: 14,
+  image: deepa,
+  name: "Deepa Singh",
+  role: "Business Analyst",
+},
+{
+  id: 15,
+  image: kriti,
+  name: "Kriti Malviya",
+  role: "Business Analyst",
+},
+{
+  id: 16,
+  image: muskan,
+  name: "Muskan Kumari",
+  role: "Hr Executive",
+},
+{
+  id: 17,
+  image: gaurav,
+  name: "Gaurav Gupta",
+  role: "Team Lead (Full Stack)",
+},
+{
+  id: 18,
+  image: rajkumar,
+  name: "Rajkumar",
+  role: "Android Developer",
 },
 ];
 
