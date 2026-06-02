@@ -7,12 +7,6 @@ const COURSES = [
   "Android Dev","Digital Marketing","Node.js","Machine Learning",
 ];
 
-const STATS = [
-  { num: "12", suf: "K+", label: "Students" },
-  { num: "50", suf: "+",  label: "Courses"  },
-  { num: "95", suf: "%",  label: "Placed"   },
-  { num: "8",  suf: "+",  label: "Years"    },
-];
 
 const FLOATING = [
   {
@@ -131,7 +125,7 @@ export default function HeroSection() {
           <div className="anim-0 inline-flex items-center gap-1.5 bg-white border border-[rgba(26,122,62,0.22)] rounded-full pl-2 pr-4 py-1.5 mb-5 text-[10px] sm:text-[11px] font-bold tracking-[.07em] uppercase text-[#1a7a3e]"
             style={{ boxShadow: "0 2px 12px rgba(26,122,62,0.08)" }}>
             <span className="dc-badge-dot w-2 h-2 rounded-full bg-[#1a7a3e] inline-block shrink-0" />
-            Lucknow's #1 IT Training Institute
+            Kanpur's #1 IT Training Institute
           </div>
 
           {/* H1 */}
